@@ -1,0 +1,26 @@
+
+
+.navbar{
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:sticky;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.h3{
+  color: white;
+  font-size: 1.2em;
+  margin-left: 1em;
+}
+
+.h3:hover{
+  color: #e5e5e5;
+}

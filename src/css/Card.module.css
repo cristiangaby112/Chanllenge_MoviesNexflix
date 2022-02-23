@@ -1,0 +1,31 @@
+.cardContainer{
+  /* flex-basis: 18em;
+  transition: transform .6s,-webkit-transform .6s;
+  margin-bottom: 5em; */
+}
+.cardContainer:hover{
+  transform: scale(1.1);
+}
+.card_img{
+  width: 15em;
+  height: 21em;
+  overflow: hidden;
+}
+.img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.info p{
+  /* width: 10em; */
+  font-size: 1em;
+  color: #fff;
+  font-weight: bold;
+  /* margin: 0; */
+}
