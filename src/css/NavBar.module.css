@@ -1,26 +1,90 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+@import url("http://fonts.cdnfonts.com/css/gotham");
 
-
-.navbar{
+.navbar {
   background-color: rgb(20, 20, 20);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  position:sticky;
-    top: 0;
-    left: 0;
-    z-index: 9;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  margin-top: 15px;
 }
 
-.link{
+.nav_menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.link {
   text-decoration: none;
 }
 
-.h3{
+.h3 {
   color: white;
-  font-size: 1.2em;
-  margin-left: 1em;
+  font-size: 18px;
+  margin: 0 20px 0 0;
+  /* font-family: 'Bebas Neue', cursive; */
+  font-family: "Gotham", sans-serif;
+  font-weight: 500;
 }
 
-.h3:hover{
+.h3:hover {
   color: #e5e5e5;
+}
+.nav_toggle {
+  color: #ffffff;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+}
+/*RESPONSIVE*/
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-left: 50px;
+  }
+  .navbar img {
+    width: 120px;
+  }
+  .link {
+    line-height: 70px;
+  }
+  .h3 {
+    font-size: 16px;
+  }
+  .nav_menu {
+    flex-direction: column;
+    background-color: gray;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .nav_toggle {
+    display: block;
+  }
+  .nav_menu_visible {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .nav_toggle {
+    padding: 0;
+  }
 }

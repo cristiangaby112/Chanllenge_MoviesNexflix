@@ -12,7 +12,7 @@ export const SearchMovies = () => {
 
   const [moviesPerPage, setMoviesPage] = useState(14);
 
-  const indexOfLastCountry = currentPages * moviesPerPage; //10
+  const indexOfLastCountry = currentPages * moviesPerPage; //14
 
   const indexOfFirstCountry = indexOfLastCountry - moviesPerPage; //0
 

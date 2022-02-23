@@ -1,3 +1,6 @@
+@import url("http://fonts.cdnfonts.com/css/gotham");
+
+
 .cardContainer{
   display: flex;
   flex-direction: column;
@@ -24,9 +27,37 @@
   margin-bottom: 0.5em;
   color: #ffffff;
   text-align: center;
+  font-family: "Gotham", sans-serif;
 }
 .container_info p{
   font-size: 1.2em;
   color: #ffffff;
   text-align: center;
+  font-family: "Gotham", sans-serif;
+}
+
+@media screen and (max-width: 425px) {
+  .container_img{
+    height: 25em;
+    width: 20em;
+    margin: 0;
+  }
+  .container_info{
+    width: 20em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container_img{
+    height: 20em;
+    width: 20em;
+  }
+  .img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .container_info{
+    width: 18em;
+  }
 }

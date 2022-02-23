@@ -1,42 +1,44 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { getMoviesSearch } from "../actions/index";
-import {BsSearch} from 'react-icons/bs';
-import s from '../css/SearchBar.module.css'
+import s from "../css/SearchBar.module.css";
+import { FaSearch } from "react-icons/fa";
 
 const SearchBar = () => {
-  const dispatch = useDispatch ();
+  const dispatch = useDispatch();
   const [name, setName] = useState("");
   const history = useHistory();
 
-  function handleInputChange(e){
+  function handleInputChange(e) {
     e.preventDefault();
     setName(e.target.value);
-    console.log(name)
+    console.log(name);
   }
 
-  function handleSubmit(e){
-    dispatch(getMoviesSearch(name))
+  function handleSubmit(e) {
+    dispatch(getMoviesSearch(name));
     setName("");
     e.preventDefault();
     console.log("el boton");
     history.push("/search");
   }
 
-
   return (
     <form className={s.searchcontainer} onSubmit={(e) => handleSubmit(e)}>
-      <input 
-      className={s.input}
-      type="text" 
-      placeholder="Search..."
-      onChange={(e) => handleInputChange(e)}
-      value={name}
+      <input
+        className={s.input}
+        type="text"
+        placeholder="Titulo..."
+        onChange={(e) => handleInputChange(e)}
+        value={name}
       />
-      <button type="submit" className={s.SearchButton}><BsSearch /></button>
+
+      <button type="submit" className={s.SearchButton}>
+        <FaSearch />
+      </button>
     </form>
-  )
-}
+  );
+};
 
 export default SearchBar;

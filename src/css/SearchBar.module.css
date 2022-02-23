@@ -1,10 +1,15 @@
 .searchcontainer{
-  margin-right: 1em;
+  /* margin-right: 1em; */
+  display: flex;
+  justify-content: space-between;
+  width: 16%;
+  align-items: center;
 }
 
 .input{
   background-color: black;
   border: #ffffff solid 1px;
+  border-radius: 5px;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 400;
@@ -17,15 +22,81 @@
 .SearchButton{
   border: solid 2px transparent;
   border-radius: 9999px;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 30px;
   align-items: center;
   color: #ffffff;
   background-color: transparent;
   transition: background-color 0.25s;
   cursor: pointer;
+  padding: 0;
+  width: 50px;
+  height: 50px;
   
 }
 .SearchButton:hover{
   background-color: rgba(255, 255, 255, 0.26);
+}
+
+.btn_container{
+  align-items: center;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 425px) {
+  .input{
+    width: 10rem;
+  }
+  .searchcontainer{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 2560px) {
+  .searchcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 16%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .searchcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .searchcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .searchcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .SearchButton{
+    font-size: 25px;
+  }
+  .input{
+    height: 1.5rem;
+    width: 9rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .input{
+    height: 1.5rem;
+    width: 7rem;
+    font-size: 1.2rem;
+  }
 }

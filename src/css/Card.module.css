@@ -1,7 +1,7 @@
 .cardContainer{
-  /* flex-basis: 18em;
+  /* flex-basis: 18em;*/
   transition: transform .6s,-webkit-transform .6s;
-  margin-bottom: 5em; */
+  /* margin-bottom: 5em; */
 }
 .cardContainer:hover{
   transform: scale(1.1);
@@ -14,7 +14,7 @@
 .img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: none; */
 }
 .info{
   display: flex;

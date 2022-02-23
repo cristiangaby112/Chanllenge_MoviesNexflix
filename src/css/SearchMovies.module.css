@@ -2,9 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 10em;
+  margin-top: 25px;
 }
 
 .container{
   background-color: #141414;
 }
+
+  

@@ -11,7 +11,6 @@ export function getMovies() {
     var json = await axios.get(
       "https://imdb-api.com/en/API/MostPopularMovies/k_brvuz12g"
     );
-      // var json = await axios.get("../../movies.json")
     console.log("soy la data", json.data);
     return dispatch({
       type: "GET_MOVIES",
