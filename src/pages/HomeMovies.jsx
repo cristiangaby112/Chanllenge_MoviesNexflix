@@ -1,8 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getMovies } from "../actions/index";
-import NavBar from "../components/NavBar";
-import Card from "../components/Card";
+import CardImage from "../components/CardImage";
 import Paged from "../components/Paged";
 import s from "../css/HomeMovies.module.css";
 
@@ -13,6 +12,7 @@ export const HomeMovies = () => {
 
   const [currentPages, setCurrentPages] = useState(1);
 
+  // eslint-disable-next-line no-unused-vars
   const [moviesPerPage, setMoviesPage] = useState(21);
 
   const indexOfLastCountry = currentPages * moviesPerPage; //10
@@ -33,7 +33,6 @@ export const HomeMovies = () => {
 
   return (
     <div className={s.container}>
-      <NavBar />
       <Paged
         moviesPerPage={moviesPerPage}
         allMovies={movies.length}
@@ -43,7 +42,7 @@ export const HomeMovies = () => {
         {currentMovies?.map((c, i) => {
           return (
             <Fragment key={c.id}>
-              <Card image={c.image} id={c.id} />
+              <CardImage image={c.image} id={c.id} />
             </Fragment>
           );
         })}

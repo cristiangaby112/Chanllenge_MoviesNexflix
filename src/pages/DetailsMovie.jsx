@@ -16,8 +16,6 @@ export const DetailsMovie = (props) => {
 
   return (
     <div>
-      <NavBar />
-
       <div className={s.cardContainer}>
         <div className={s.container_img}>
           <img src={details.image} className={s.img} alt="" />

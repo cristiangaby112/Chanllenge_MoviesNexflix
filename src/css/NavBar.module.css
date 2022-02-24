@@ -10,7 +10,8 @@
   top: 0;
   left: 0;
   z-index: 9;
-  margin-top: 15px;
+  padding: 15px 0 15px 0;
+  box-shadow: -1px 9px 12px 0px rgba(0, 0, 0, 0.75);
 }
 
 .nav_menu {
@@ -46,6 +47,14 @@
   line-height: 60px;
   display: none;
 }
+
+.navbar img {
+  transition: transform 0.6s, -webkit-transform 0.6s;
+}
+
+.navbar img:hover {
+  transform: scale(1.1);
+}
 /*RESPONSIVE*/
 
 @media screen and (max-width: 768px) {
@@ -65,7 +74,7 @@
     flex-direction: column;
     background-color: gray;
     position: fixed;
-    left: 0;
+    /* left: 0; */
     top: 60px;
     width: 100%;
     padding: 20px 0 20px 0;

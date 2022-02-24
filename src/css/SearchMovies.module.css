@@ -1,12 +1,12 @@
-.card{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 25px;
+.card {
+  margin-top: 3em;
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, 15rem);
 }
 
-.container{
+.container {
   background-color: #141414;
 }
-
-  

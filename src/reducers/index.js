@@ -1,6 +1,4 @@
-import { GET_MOVIES, GET_MOVIES_NAME, GET_DETAILS } from '../actions/index';
-
-
+import { GET_MOVIES, GET_MOVIES_NAME, GET_DETAILS } from "../actions/index";
 
 const initialState = {
   movies: {},
@@ -8,8 +6,8 @@ const initialState = {
   details: {},
 };
 
-function rootReducer(state = initialState, action){
-  switch(action.type){
+function rootReducer(state = initialState, action) {
+  switch (action.type) {
     case GET_MOVIES:
       return {
         ...state,

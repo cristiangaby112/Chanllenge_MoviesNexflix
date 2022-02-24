@@ -1,8 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { useSelector } from "react-redux";
-import Card from "../components/Card";
+import CardImage from "../components/CardImage";
 import Paged from "../components/Paged";
-import NavBar from "../components/NavBar";
 import s from "../css/SearchMovies.module.css";
 
 export const SearchMovies = () => {
@@ -10,6 +9,7 @@ export const SearchMovies = () => {
 
   const [currentPages, setCurrentPages] = useState(1);
 
+  // eslint-disable-next-line no-unused-vars
   const [moviesPerPage, setMoviesPage] = useState(14);
 
   const indexOfLastCountry = currentPages * moviesPerPage; //14
@@ -29,7 +29,6 @@ export const SearchMovies = () => {
 
   return (
     <div className={s.container}>
-      <NavBar />
       <Paged
         moviesPerPage={moviesPerPage}
         allMovies={searchMovies.length}
@@ -39,7 +38,7 @@ export const SearchMovies = () => {
         {currentSearchMovies?.map((c) => {
           return (
             <Fragment key={c.id}>
-              <Card image={c.image} id={c.id} />
+              <CardImage image={c.image} id={c.id} />
             </Fragment>
           );
         })}

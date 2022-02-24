@@ -1,4 +1,4 @@
-.searchcontainer{
+.searchcontainer {
   /* margin-right: 1em; */
   display: flex;
   justify-content: space-between;
@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.input{
+.input {
   background-color: black;
   border: #ffffff solid 1px;
   border-radius: 5px;
@@ -16,10 +16,10 @@
   width: 15rem;
   height: 2rem;
 }
-.input::placeholder{
+.input::placeholder {
   color: #ffffff75;
 }
-.SearchButton{
+.SearchButton {
   border: solid 2px transparent;
   border-radius: 9999px;
   font-size: 30px;
@@ -31,29 +31,28 @@
   padding: 0;
   width: 50px;
   height: 50px;
-  
 }
-.SearchButton:hover{
+.SearchButton:hover {
   background-color: rgba(255, 255, 255, 0.26);
 }
 
-.btn_container{
+.btn_container {
   align-items: center;
 }
 
 /* RESPONSIVE */
 
 @media screen and (max-width: 425px) {
-  .input{
+  .input {
     width: 10rem;
   }
-  .searchcontainer{
+  .searchcontainer {
     margin: 0;
   }
 }
 
 @media screen and (max-width: 2560px) {
-  .searchcontainer{
+  .searchcontainer {
     display: flex;
     justify-content: space-evenly;
     width: 16%;
@@ -61,14 +60,14 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .searchcontainer{
+  .searchcontainer {
     display: flex;
     justify-content: space-evenly;
     width: 25%;
   }
 }
 @media screen and (max-width: 1024px) {
-  .searchcontainer{
+  .searchcontainer {
     display: flex;
     justify-content: space-evenly;
     width: 30%;
@@ -76,7 +75,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .searchcontainer{
+  .searchcontainer {
     display: flex;
     justify-content: space-evenly;
     width: 45%;
@@ -84,17 +83,17 @@
 }
 
 @media screen and (max-width: 425px) {
-  .SearchButton{
+  .SearchButton {
     font-size: 25px;
   }
-  .input{
+  .input {
     height: 1.5rem;
     width: 9rem;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .input{
+  .input {
     height: 1.5rem;
     width: 7rem;
     font-size: 1.2rem;

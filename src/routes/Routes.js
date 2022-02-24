@@ -5,13 +5,13 @@ import { HomeMovies } from "../pages/HomeMovies";
 import { SearchMovies } from "../pages/SearchMovies";
 
 const Routes = () => {
-  return(
+  return (
     <Switch>
-      <Route exact path="/" component={HomeMovies}/>
-      <Route path= "/search" component={SearchMovies}/>
-      <Route path= "/details/:id" component={DetailsMovie}/>
+      <Route exact path="/" component={HomeMovies} />
+      <Route path="/search" component={SearchMovies} />
+      <Route path="/details/:id" component={DetailsMovie} />
     </Switch>
-  )
-}
+  );
+};
 
 export default Routes;
