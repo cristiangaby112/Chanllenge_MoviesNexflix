@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getDetails } from "../actions/index";
-import NavBar from "../components/NavBar";
 import s from "../css/DetailsMovie.module.css";
 
 export const DetailsMovie = (props) => {

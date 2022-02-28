@@ -12,13 +12,13 @@ export const SearchMovies = () => {
   // eslint-disable-next-line no-unused-vars
   const [moviesPerPage, setMoviesPage] = useState(14);
 
-  const indexOfLastCountry = currentPages * moviesPerPage; //14
+  const indexOfLastMovies = currentPages * moviesPerPage; //14
 
-  const indexOfFirstCountry = indexOfLastCountry - moviesPerPage; //0
+  const indexOfFirstMovies = indexOfLastMovies - moviesPerPage; //0
 
   const currentSearchMovies = searchMovies.slice(
-    indexOfFirstCountry,
-    indexOfLastCountry
+    indexOfFirstMovies,
+    indexOfLastMovies
   );
 
   //PAGINADO
