@@ -68,14 +68,14 @@
     line-height: 70px;
   }
   .h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .nav_menu {
     flex-direction: column;
-    background-color: gray;
+    background-color: rgba(102, 101, 101, 0.986);
     position: fixed;
     /* left: 0; */
-    top: 60px;
+    top: 91px;
     width: 100%;
     padding: 20px 0 20px 0;
     height: calc(100% - 60px);
