@@ -24,4 +24,4 @@ yarn install
 ![app](https://cdn.discordapp.com/attachments/402985413079465985/947997275781738556/Screenshot_20220228-201924.jpg?width=20&height=20)
 ![app](https://cdn.discordapp.com/attachments/402985413079465985/947997276058578954/Screenshot_20220228-201948.jpg?width=20&height=20)
 ![app](https://cdn.discordapp.com/attachments/402985413079465985/947997276524126238/Screenshot_20220228-201955.jpg?width=20&height=20)
-![app](https://cdn.discordapp.com/attachments/402985413079465985/947997276805140490/Screenshot_20220228-201932.jpg?width=20&height=20)
+![app](https://cdn.discordapp.com/attachments/402985413079465985/948010161937739808/Screenshot_20220228-211318.jpg?width=20&height=20)
