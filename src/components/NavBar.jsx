@@ -16,7 +16,7 @@ export const NavBar = () => {
   return (
     <nav className={s.navbar}>
       <button className={s.nav_toggle} onClick= {toggleMenu}><FaBars/></button>
-      <img src={logo_nextflix} alt="not found" width="10%" classname={s.logo}/>
+      <img src={logo_nextflix} alt="not found" width="10%" className={s.logo}/>
       <div className={`${s.nav_menu} ${visible ? s.nav_menu_visible : ""}`}>
       <Link to="/" className={s.link}>
         <h3 className={s.h3}>Home</h3>
