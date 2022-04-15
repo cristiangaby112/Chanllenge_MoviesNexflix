@@ -6,13 +6,25 @@ import s from "../css/DetailsMovie.module.css";
 export const DetailsMovie = (props) => {
   const dispatch = useDispatch();
 
-  const details = useSelector((state) => state.details) || [];
+  const details = useSelector((state) => state.details) || []
   console.log("soy la detail", details);
 
   useEffect(() => {
     dispatch(getDetails(props.match.params.id));
   }, [dispatch, props.match.params.id]);
 
+  if (details.length === 0) {
+    return (
+    <div className={s.load}>
+      <div>G</div>
+      <div>N</div>
+      <div>I</div>
+      <div>D</div>
+      <div>A</div>
+      <div>O</div>
+      <div>L</div>
+    </div>)
+    }
   return (
     <div>
       <div className={s.cardContainer}>
