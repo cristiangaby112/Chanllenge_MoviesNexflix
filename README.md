@@ -4,7 +4,7 @@ This project was started with React, Redux, CSS Module.
 
 This command will install dependencies to run this application.
 
-Link: https://nettflix-movies-app.herokuapp.com/
+Link: https://chanllenge-movies-nexflix.vercel.app/
 
 ```
 npm install
